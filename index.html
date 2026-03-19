@@ -72,11 +72,15 @@
       border-color: #a8a29e;
     }
 
-    nav a svg {
+    nav a svg, nav a img.icon {
       width: 20px;
       height: 20px;
       flex-shrink: 0;
       fill: currentColor;
+    }
+
+    nav a img.icon {
+      border-radius: 4px;
     }
 
     nav a span.label { flex: 1; }
@@ -88,6 +92,16 @@
     }
 
     nav a:hover span.arrow { transform: translateX(3px); }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      margin-top: 2.5rem;
+    }
 
     footer {
       margin-top: 3rem;
@@ -117,6 +131,16 @@
         <span class="arrow">&rarr;</span>
       </a>
     </nav>
+    <section>
+      <h2>Free Software</h2>
+      <nav>
+        <a href="https://github.com/grishick/airtable-kanban-desktop/releases" target="_blank" rel="noopener">
+          <img class="icon" src="assets/airtable-kanban-desktop.png" alt="Airtable Kanban Desktop">
+          <span class="label">Airtable Kanban Desktop</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </nav>
+    </section>
     <footer>&copy; 2026 Greg Solovyev</footer>
   </div>
 </body>
