@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — FamilyMesh (Katzen Chat)</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #fafaf9;
+      --text: #1c1917;
+      --muted: #78716c;
+      --link: #0c0a09;
+      --link-hover: #44403c;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 3rem 2rem;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    a { color: var(--link); }
+    a:hover { color: var(--link-hover); }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .back:hover { color: var(--text); }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p, ul {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 0.35rem; }
+
+    footer {
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="/">&larr; Home</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective Date: May 26, 2026</p>
+
+    <p>FamilyMesh (also known as Katzen Chat) is designed with a "privacy-first" architecture. Our goal is to provide a secure messaging platform that respects your anonymity and protects your data through strong cryptography.</p>
+
+    <h2>1. No Personal Information Collection</h2>
+    <p>We do not collect, store, or distribute any personal information about our users. Specifically:</p>
+    <ul>
+      <li><strong>No Personal Identifiers:</strong> We do not require or collect your phone number, email address, name, or contacts.</li>
+      <li><strong>Cryptographic Identities:</strong> Your identity within the app is based solely on cryptographic keys generated locally on your device. These keys are not linked to your real-world identity.</li>
+      <li><strong>No Tracking:</strong> The app does not include any advertising SDKs, tracking pixels, or analytics tools. We do not track your location or your usage habits.</li>
+    </ul>
+
+    <h2>2. End-to-End Encryption</h2>
+    <p>All communications—including direct messages, group chats, and calls—are end-to-end encrypted using the FamilyMesh protocol (based on libsodium).</p>
+    <ul>
+      <li><strong>Only You and Your Recipients:</strong> Only the intended recipients can decrypt and read your messages.</li>
+      <li><strong>Opaque to Relays:</strong> The messaging relays (servers) that facilitate delivery only see opaque, encrypted "envelopes." They do not have access to the decryption keys and cannot read your messages.</li>
+    </ul>
+
+    <h2>3. Data Storage and Retention</h2>
+    <ul>
+      <li><strong>On-Device Storage:</strong> Your chat history, cryptographic keys, and profile information are stored locally on your device. This data is protected by the security features of your operating system (iOS, Android, or desktop OS).</li>
+      <li><strong>Relay Storage:</strong> Relays store only the minimum data necessary to function:
+        <ul>
+          <li><strong>Queued Envelopes:</strong> Encrypted messages waiting to be delivered to an offline recipient.</li>
+          <li><strong>Device Tokens:</strong> If enabled, push notification tokens (FCM/APNs) are stored to alert your device of new messages.</li>
+          <li><strong>Relay Roster:</strong> A list of peer public keys you have interacted with to facilitate routing.</li>
+        </ul>
+      </li>
+      <li><strong>Invite-Only:</strong> Access to a relay is managed through invite codes, which are not linked to your identity.</li>
+    </ul>
+
+    <h2>4. Metadata and Third-Party Services</h2>
+    <ul>
+      <li><strong>Push Notifications:</strong> When using push notifications on iOS or Android, message metadata (such as the sender's display name or group name) may be sent through Apple (APNs) or Google (FCM) to wake up your device.
+        <ul>
+          <li><strong>Privacy Mode:</strong> You can enable "Feral Mode" (Privacy Mode) in the app settings to suppress this metadata, ensuring push notifications only display generic text like "New message."</li>
+        </ul>
+      </li>
+      <li><strong>Relay Choice:</strong> FamilyMesh is a decentralized system. You choose which relay to connect to. The privacy practices of an individual relay are determined by its operator. We recommend using relays operated by people or organizations you trust.</li>
+    </ul>
+
+    <h2>5. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our features or legal requirements. Any changes will be posted within the app or in the project repository.</p>
+
+    <h2>6. Contact</h2>
+    <p>Since we do not collect personal information, we do not have a way to contact you directly. If you have questions about this policy, please refer to the project documentation or contact the operator of your chosen relay.</p>
+
+    <footer>&copy; 2026 Greg Solovyev</footer>
+  </div>
+</body>
+</html>
